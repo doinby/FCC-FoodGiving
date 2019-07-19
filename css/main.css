@@ -47,13 +47,13 @@ body {
     flex-direction: column;
 }
 
-header {
+/* header {
     z-index: 2;
-}
+} */
 
-nav {
+/* nav {
     position: fixed;
-}
+} */
 
 main {
     flex: 1 0 auto;
