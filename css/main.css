@@ -9,8 +9,11 @@ nav ul a {
 }
 
 ul li a,
-.banner-text {
+.banner-text,
+.input-field input, .input-field label,
+.social-links svg, .social-links a {
     color: #fff;
+    fill: #fff;
 }
 
 section:nth-child(odd) {
@@ -26,6 +29,13 @@ h1 {
     font-weight: 700;
 }
 
+.social-links a:hover, .social-links a:focus,
+#mission h1,
+.card-image i, .card-title {
+    color: #F50057;
+    fill: #F50057;
+}
+
 /* Block *************************************************/
 
 html, body {
@@ -37,12 +47,20 @@ body {
     flex-direction: column;
 }
 
+header {
+    z-index: 2;
+}
+
 nav {
-    position: relative;
+    position: fixed;
 }
 
 main {
     flex: 1 0 auto;
+}
+
+.section {
+    padding: 64px;
 }
 
 footer {
@@ -50,6 +68,10 @@ footer {
 }
 
 /* Element ***********************************************/
+
+svg {
+    margin: 0 8px;
+}
 
 #header-img {
     width: 110px;
@@ -79,23 +101,73 @@ header nav .container {
     text-transform: capitalize;
 }
 
-#features .container {
+#features .container,
+footer .container {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .card {
     width: 210px;
+    padding: 2em;
 }
 
 .card-image {
     display: flex;
-    align-content: center;
-    justify-items: center;
+    justify-content: center;
 }
 
 .card-title {
-    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+
+.qa {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas: 
+    "icon p"
+    "icon p";
+    grid-gap: 0.5em;
+    padding: 1em;
+}
+
+.qa:last-child {
+    padding-bottom: 0;
+}
+
+.qa i {
+    grid-area: icon;
+}
+
+.qa p {
+    margin: 0;
+}
+
+.newsletter {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto 1fr;
+}
+
+.newsletter h5 {
+    grid-column: 1 / 3;
+}
+
+.newsletter .input-field {
+    width: 150px;
+    margin: 0;
+}
+
+.newsletter a {
+    margin-top: 12px;
+}
+
+.social-links a {
+    align-content: center;
+    padding: 12px 0;
 }
 
 .copyright-holder {
