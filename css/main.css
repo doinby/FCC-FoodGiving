@@ -2,14 +2,24 @@
 
 /* Theme **************************************************/
 
-body, 
+body,
 nav ul a {    
     color: #000 ;
     font-family: proxima-nova,sans-serif;
 }
 
+ul li a,
 .banner-text {
     color: #fff;
+}
+
+section:nth-child(odd) {
+    background: #00E676;
+    color: #fff;
+}
+
+section:first-child {
+    background: rgb(0,0,0,0);
 }
 
 h1 {
@@ -42,7 +52,7 @@ footer {
 /* Element ***********************************************/
 
 #header-img {
-    width: 130px;
+    width: 110px;
     height: auto;
 }
 
@@ -67,6 +77,25 @@ header nav .container {
 .banner-text a {
     margin: 0 1em;
     text-transform: capitalize;
+}
+
+#features .container {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.card {
+    width: 210px;
+}
+
+.card-image {
+    display: flex;
+    align-content: center;
+    justify-items: center;
+}
+
+.card-title {
+    height: 100px;
 }
 
 .copyright-holder {
