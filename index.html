@@ -2,46 +2,82 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Product Landing Page</title>
+    <title>Food Giving</title>
     <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">    
+    <!-- Fonts -->
+    <link rel="stylesheet" href="https://use.typekit.net/pem4idr.css">
     <!-- CSS -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="css/materialize.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
-<body>
+<body>    
+    <header id="header">
+        <nav id="nav-bar" role="navigation">
+            <div class="container --flex">
+                <img id="header-img" src="images/foodGiving-NoShadow.svg" alt="">
+                <ul class="hide-on-med-and-down">
+                    <li><a class="nav-link" href="#header">Home</a></li>
+                    <li><a class="nav-link" href="#mission">Our Mission</a></li>
+                    <li><a class="nav-link" href="#how">How It Works?</a></li>
+                    <li><a class="nav-link" href="#features">Features</a></li>
+                    <li><a class="nav-link" href="#faq">FAQ</a></li>
+                    <li>
+                        <a href="" class="nav-link btn">
+                        <i class="material-icons left">devices</i>
+                        Try Our App
+                        </a>
+                    </li>
+                </ul>
+                
+                <ul id="nav-mobile" class="sidenav">
+                    <li><a href="#">Navbar Link</a></li>
+                    <li><a href="#">Navbar Link</a></li>
+                    <li><a href="#">Navbar Link</a></li>
+                </ul>
+                <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            </div>
+        </nav>
+    </header>
     
-    <nav role="navigation">
-        <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="#">Navbar Link</a></li>
-                <li><a href="#">Navbar Link</a></li>
-                <li><a href="#">Navbar Link</a></li>
-            </ul>
-            
-            <ul id="nav-mobile" class="sidenav">
-                <li><a href="#">Navbar Link</a></li>
-                <li><a href="#">Navbar Link</a></li>
-                <li><a href="#">Navbar Link</a></li>
-            </ul>
-            <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-        </div>
-    </nav>
-    
-    
+    <main>
+        <section id="banner">
+            <div id="index-banner" class="parallax-container --flex">
+                <div class="banner-text">
+                    <h1>Food waste is a big challenge</h1>
+                    <h5>
+                        Recycling food and building a healthy, thriving community
+                        <a class="waves-effect waves-light btn">Learn how</a>
+                    </h5>
+                </div>
+                <div class="parallax"><img src="images/image1.png" alt=""></div>
+            </div>
+        </section>
+        <section id="mission" class="section container">
+            <h1 class=" center">Our Mission</h1>
+            <p>Food Giving is created in response to the pressing need to consume food responsibly. 4 billion tons of edible food is
+            wasted each year, but it won't stay that way if each person take a small step toward preventing food waste. To assist
+            with this process, our platform is offering an easy gateway between the donator and the receiver. And the best part,
+            it's completely FREE!</p>
+        </section>
+        <section id="how"></section>
+        <section id="features"></section>
+    </main>
     
     <footer class="page-footer">
         <div class="footer-copyright">
             <div class="container">
-                Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+                <p class="copyright-holder">Food Giving 2019</p>
             </div>
         </div>
     </footer>
     
     
     <!--  Scripts-->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/script.js"></script>

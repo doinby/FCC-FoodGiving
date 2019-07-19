@@ -1,3 +1,88 @@
-body {
-    color: #212121;
+/* This stylesheet is organized using BEM methology *******/
+
+/* Theme **************************************************/
+
+body, 
+nav ul a {    
+    color: #000 ;
+    font-family: proxima-nova,sans-serif;
 }
+
+.banner-text {
+    color: #fff;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+/* Block *************************************************/
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    position: relative;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+footer {
+    flex-shrink: 0;
+}
+
+/* Element ***********************************************/
+
+#header-img {
+    width: 130px;
+    height: auto;
+}
+
+header nav .container {
+    justify-content: space-between;
+}
+
+.parallax-container {
+    align-content: center;
+    justify-content: flex-end;
+}
+
+.banner-text {
+    width: 550px;
+    margin-right: 4em;
+}
+
+.banner-text h5 {
+    line-height: 1.5;
+}
+
+.banner-text a {
+    margin: 0 1em;
+    text-transform: capitalize;
+}
+
+.copyright-holder {
+    margin: 0;
+    text-align: right;
+}
+
+/* Modifier **********************************************/
+
+footer .copyright-holder:before { content:"\00a9" "\00a0"; }
+
+#--flex, .--flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Responsive ********************************************/
+
+@media (max-width: 800px) {}
